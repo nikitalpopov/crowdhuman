@@ -1,0 +1,6 @@
+.vscode
+
+images_test/*.jpg
+images_train/*.jpg
+images_val/*.jpg
+results/*.txt
