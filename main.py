@@ -29,8 +29,8 @@ def generate_annotations(filename):
             image['annotations'] = [
                 {
                     'tag': box['tag'],
-                    'x': float(box['vbox'][0]) / float(width),
-                    'y': float(box['vbox'][1]) / float(height),
+                    'x': float(box['vbox'][0] + 0.5 * float(box['vbox'][2])) / float(width),
+                    'y': float(box['vbox'][1] + 0.5 * float(box['vbox'][3])) / float(height),
                     'w': float(box['vbox'][2]) / float(width),
                     'h': float(box['vbox'][3]) / float(height)
                 } for box in annotation['gtboxes']]
