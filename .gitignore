@@ -1,6 +1,6 @@
 .vscode
 
-images_test/*.jpg
-images_train/*.jpg
-images_val/*.jpg
-results/*.txt
+images_test/*.*
+images_train/*.*
+images_val/*.*
+results/*.*
